@@ -19,9 +19,6 @@
   width: 183px;
   height: 32px;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
- 
 }
 .logo_place_header{
   position: absolute;
@@ -29,13 +26,16 @@
   left: 64px;
 }
 
+.logo_place_footer{
+  display: flex;
+}
+
 .header__title{
   width: 730px; 
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  position: absolute;
-  left: 64px;
+  margin-left: 64px;
   z-index: 2;
 }
 
@@ -49,10 +49,12 @@
   font-weight: normal;
   z-index: 2;
 }
+
 .header__link{
   color: #2f80ed;
   text-decoration: none;
 }
+
 .header__main-illustration{
   width: 765px;
   height: 608px;
@@ -60,8 +62,9 @@
   position: absolute;
   bottom: 0;
   right: 0;
-   z-index: 1;
+  z-index: 1;
 }
+
 .header__square-pic{
   width: 568px;
   height: 568px;
@@ -76,12 +79,14 @@
 .description{
   margin-top: 100px;
 }
+
 .two-columns{
   width: 80%; 
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
+
 .two-columns__brief{
   width: 175px;
   line-height: 1.2;
@@ -89,32 +94,39 @@
   font-weight: normal; 
   color: #2f80ed;
 }
+
 .two-columns__main-text{
   width: 80%;
   min-width: 784px
 }
+
 .two-columns__paragraph{
   line-height: 34px;
   font-size: 24px;
   font-weight: normal; 
 }
+
 .two-columns__span-accent{
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
 }
+
 .digits{
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .section-title{
   text-align: center;
+  margin-top: 100px;
   margin: auto;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
+
 .section-subtitle{
   text-align: center;
   margin: 20px auto;
@@ -123,6 +135,7 @@
   font-size: 24px;
   font-weight: normal;
 }
+
 .table{
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +143,7 @@
   justify-content: space-between;
   margin: 0 auto;
 }
+
 .table__cell{
   margin-top: 60px;
   width: 250px;
@@ -141,21 +155,25 @@
   font-size: 24px;
   font-weight: bold;
 }
+
 .table__text{
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal; 
 }
+
 .feynman{
   height: 890px;
   background-color: #f2f2f2;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
 .feynman__title{
   width: 648px;
-  margin: auto;
-  padding-top: 100px;
+  margin: 100px auto 70px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -163,8 +181,9 @@
   position: relative;
   z-index: 1;
 }
+
 .feynman__subtitle{
-  margin: 70px auto;
+  margin: 0 auto;
   text-align: center;
   line-height: 51px;
   font-size: 36px;
@@ -172,6 +191,7 @@
   position: relative;
   z-index: 1;
 }
+
 .feynman__link{
   line-height: 51px;
   font-size: 36px;
@@ -183,6 +203,7 @@
   right: 48px;
   z-index: 1;
 }
+
 .feynman__img{
   width: 867px;
   height: 637px;
@@ -190,67 +211,41 @@
   bottom: 0;
   left: 0;
 }
+
 .kaufman{
   position: relative;
   background-color: #1f1f1f;
   overflow: hidden;
-}
-.section-title__theme_dark{
-  width: 60%;
   color: white;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  margin: auto;
-  padding-top: 90px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
 }
-.section-subtitle__theme_dark{
-  width: 60%;
-  color: white;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal; 
-  margin: 20px auto;
-  text-align: center;
-  position: relative;
-  z-index: 1;
 
+.section-title__theme_dark{
+  margin-top: 90px;
+  position: relative;
+  z-index: 1;
 }
+
+.section-subtitle__theme_dark{
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+}
+
 .table__theme_dark{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1100px;
   margin: 0 auto 90px;
 }
+
 .table__cell_theme_dark{
   width: 200px;
   margin-top: 80px;
   position: relative;
   z-index: 1;
 }
-.table__heading_theme_dark{
-  color: white;
-  margin-top: 0;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold; 
 
-}
-.table__text_theme_dark{
-  color: white;
-  margin-top: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal; 
-
-}
 .kaufman__triangle{
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   top: 0;
   right: -210px;
@@ -260,45 +255,45 @@
 .footer{
   background-color: #1f1f1f;
   min-height: 350px;
+  color: white;
   display: flex;
-  justify-content: center;
-  position: relative;
 }
 
 .footer__columns{
   width: 90%;
-  padding: 60px auto 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 60px auto 40px;
 }
 
 .footer__column_content_copyright{
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__author{
-  color: white;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal; 
-  position: absolute;
-  bottom: 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .footer__column-heading{
   margin-top: 0;
-  color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold; 
 }
 
 .footer__column-links{
-  display: flex;
-  flex-direction: column;
   margin-top: 20px;
   margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column-link{
